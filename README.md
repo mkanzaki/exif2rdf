@@ -12,9 +12,9 @@ Requires definition file "exif-tags.json" in the same directory. Also requires I
 
 **exif-tags.json** is a mapping file from Exif tag number to RDF property (defined in [Exif data description vocabulary](http://www.kanzaki.com/ns/exif) ).
 
-The root object has keys as Eixf tag, and each value object has RDF property name `propName` and additional information such as `default` or allowable `value` array.
+The root object has keys as Eixf tags, and each value object has RDF property name `propName` and additional information such as `default`, or `values` array to map Exif values to RDF objects .
 
-```
+```json
 {
 	"283" : {
 		"propName" : "yResolution",
